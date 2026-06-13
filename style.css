@@ -1,0 +1,101 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    padding: 20px;
+}
+
+/* Container Wrapper */
+.container {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px 25px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Profile Styling */
+.profile {
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 15px;
+}
+
+.profile h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+
+.bio {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.4;
+}
+
+/* Links Buttons Stack */
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+    background: #ffffff;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+/* Hover/Interaction Effects */
+.link-btn:hover {
+    transform: translateY(-2px);
+    background: #2c3e50;
+    color: #ffffff;
+    box-shadow: 0 5px 15px rgba(44, 62, 80, 0.2);
+}
+
+.link-btn:active {
+    transform: translateY(0);
+}
+
+/* Footer Section */
+.footer {
+    font-size: 0.8rem;
+    color: #888888;
+    letter-spacing: 0.5px;
+}
